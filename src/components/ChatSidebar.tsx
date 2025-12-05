@@ -1,5 +1,5 @@
 import { Moon, Plus, Sun } from "lucide-react";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import { Button } from "~/components/ui/button";
 import {
   SidebarContent,
@@ -16,7 +16,7 @@ import {
 import { useTheme } from "./ThemeProvider";
 import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "~/lib/dexie";
-import { Link, useLocation, useNavigate, useParams } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import {
   Dialog,
   DialogContent,
@@ -55,9 +55,9 @@ export const ChatSidebar = () => {
     navigate(`/thread/${threadId}`);
   };
   
-  useLayoutEffect(() => {
-    setActiveChat(location.pathname.split("/")[2]);
-  }, [])
+useLayoutEffect(() => {
+  setActiveChat(location.pathname.split("/")[2]);
+}, [location.pathname]);
 
   return (
     <>
