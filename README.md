@@ -6,7 +6,9 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Using ollama 
 
 Models 
+```bash
 ollama run deepseek-r1:1.5b
+```
 
 Currently, two official plugins are available:
 
