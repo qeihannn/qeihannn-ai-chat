@@ -3,9 +3,8 @@
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 
-Using ollama 
+## Ai Model 
 
-Models 
 ```bash
 ollama run deepseek-r1:1.5b
 ```
